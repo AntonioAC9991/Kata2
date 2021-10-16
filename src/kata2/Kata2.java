@@ -7,10 +7,11 @@ public class Kata2 {
     
     public static void main(String[] args) {
         //int[] data = {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14};
-        Integer[] data = {1,100,4,2,0,5,6,7,8,9,10,11,12,13,14};
+        //Integer[] data = {1,100,4,2,0,5,6,7,8,9,10,11,12,13,14};
+        String[] data = {"Rosa", "Pepe", "María", "Pepe", "Pepe", "Rosa"};
         Histogram histo = new Histogram(data);
-        Map<Integer,Integer> histogr = histo.getHistogram();
-        for (Integer key : histogr.keySet()) {
+        Map<String,Integer> histogr = histo.getHistogram();
+        for (String key : histogr.keySet()) {
             System.out.println(key + "==>" + histogr.get(key));            
         }
     }
